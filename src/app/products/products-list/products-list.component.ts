@@ -10,6 +10,7 @@ export class ProductsListComponent implements OnInit {
   pageTitle: string = 'Products List';
   imageWidth: number = 50;
   imageMargin: number = 2;
+  showImage: boolean = false;
   products: any[] = [
     {
       "productId": 1,
@@ -56,6 +57,11 @@ export class ProductsListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+
+  toggleImage():void{
+    this.showImage = !this.showImage;
   }
 
 }
