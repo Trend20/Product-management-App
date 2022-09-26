@@ -66,4 +66,8 @@ export class ProductsListComponent implements OnInit {
     this.showImage = !this.showImage;
   }
 
+  onStarRatingClicked(message: string):void{
+    this.pageTitle = ' Product List:  ' + message;
+  }
+
 }
